@@ -5,12 +5,6 @@ export async function getUniqueCombinations(data) {
         const burntCombos = {},
             uniqueCombos = []
 
-        console.log(
-            `[UTILITIES] Generating Unique Combinations from ${
-                Object.keys(data).length
-            } Symbols...`
-        )
-
         for (const key in data) {
             if (Object.hasOwnProperty.call(data, key)) {
                 const first = key
@@ -37,12 +31,6 @@ export async function getUniqueCombinations(data) {
                 }
             }
         }
-
-        console.log(
-            `[UTILITIES] Generated ${
-                Object.keys(uniqueCombos).length
-            } Unique Combinations!`
-        )
 
         return uniqueCombos
     } catch (error) {

@@ -1,26 +1,5 @@
 import log from './log.js'
 
-export async function keyValuesToArray(data, reduction) {
-    try {
-        const reduced = {}
-
-        for (const key in data) {
-            if (Object.hasOwnProperty.call(data, key)) {
-                const element = data[key]
-
-                reduced[key] = element.map((e) => {
-                    const obj = {}
-                    return (obj[reduction] = e[reduction])
-                })
-            }
-        }
-
-        return reduced
-    } catch (error) {
-        log(error, 'Error')
-    }
-}
-
 export async function filterKeysByValue(object, condition) {
     try {
         const res = {}
@@ -63,7 +42,7 @@ export async function keepKeysExcept(object, condition) {
     }
 }
 
-export async function sliceObject(object, index) {
+export async function sliceObjectKeysByIndex(object, index) {
     try {
         return Object.keys(object)
             .slice(0, index)
@@ -77,7 +56,7 @@ export async function sliceObject(object, index) {
     }
 }
 
-export async function deleteKeysBasedOnList(object, list) {
+export async function removeKeysByStringArray(object, list) {
     try {
         const res = {}
 
@@ -86,6 +65,16 @@ export async function deleteKeysBasedOnList(object, list) {
         })
 
         return res
+    } catch (error) {
+        log(error, 'Error')
+    }
+}
+
+export async function sortObjectKeys(obj) {
+    try {
+        return Object.keys(obj)
+            .sort()
+            .reduce((res, key) => ((res[key] = obj[key]), res), {})
     } catch (error) {
         log(error, 'Error')
     }

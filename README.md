@@ -1,6 +1,6 @@
-# @accretence/javascript-utilities
+![javascript-utilities](https://user-images.githubusercontent.com/45223699/174671315-95f17a9e-7a27-4b41-b596-ebbb68b2e6d4.jpg)
 
-Standardized set of Javscript functions. Have fun BUIDLing! 🤙
+Standardized set of Javscript functions.
 
 ## Usage
 
