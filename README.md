@@ -5,7 +5,7 @@ Standardized set of Javascript helper functions.
 Install using:
 
 ```bash
-npm i terracotta
+npm i apadana
 ```
 
 ## Peer Dependencies

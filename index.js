@@ -13,7 +13,7 @@ import { getUniqueCombinations } from './src/getUniqueCombinations.js'
 import log from './src/log.js'
 import { writeFile } from './src/writeFile.js'
 
-const Terracotta = {
+const Apadana = {
     objects: {
         removeKeysByStringArray,
         filterKeysByValue,
@@ -35,4 +35,4 @@ const Terracotta = {
     writeFile,
 }
 
-export default Terracotta
+export default Apadana

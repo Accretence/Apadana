@@ -1,5 +1,5 @@
 {
-    "name": "terracotta",
+    "name": "apadana",
     "version": "0.0.1",
     "description": "My Javascript utilities.",
     "main": "index.js",
@@ -8,7 +8,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Accretence/terracotta.git"
+        "url": "git+https://github.com/Accretence/apadana.git"
     },
     "keywords": [
         "javascript",
@@ -17,9 +17,9 @@
     "author": "@accretence",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/Accretence/terracotta/issues"
+        "url": "https://github.com/Accretence/apadana/issues"
     },
-    "homepage": "https://github.com/Accretence/terracotta#readme",
+    "homepage": "https://github.com/Accretence/apadana#readme",
     "peerDependencies": {
         "axios": "^0.27.2",
         "colors": "^1.4.0"
