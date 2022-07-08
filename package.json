@@ -1,14 +1,15 @@
 {
     "name": "apadana",
-    "version": "0.0.1",
-    "description": "My Javascript utilities.",
+    "version": "0.0.2",
+    "description": "Standardized set of Javascript helper functions.",
     "main": "index.js",
+    "type": "module",
     "scripts": {
-        "publish": "npm publish --access public"
+        "update": "npx npm-check-updates -u"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Accretence/apadana.git"
+        "url": "git+https://github.com/Accretence/Apadana.git"
     },
     "keywords": [
         "javascript",
@@ -17,9 +18,9 @@
     "author": "@accretence",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/Accretence/apadana/issues"
+        "url": "https://github.com/Accretence/Apadana/issues"
     },
-    "homepage": "https://github.com/Accretence/apadana#readme",
+    "homepage": "https://github.com/Accretence/Apadana#readme",
     "peerDependencies": {
         "axios": "^0.27.2",
         "colors": "^1.4.0"

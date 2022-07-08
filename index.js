@@ -13,7 +13,7 @@ import { getUniqueCombinations } from './src/getUniqueCombinations.js'
 import log from './src/log.js'
 import { writeFile } from './src/writeFile.js'
 
-const Apadana = {
+export default {
     objects: {
         removeKeysByStringArray,
         filterKeysByValue,
@@ -34,5 +34,3 @@ const Apadana = {
     log,
     writeFile,
 }
-
-export default Apadana
