@@ -12,8 +12,15 @@ import { getIPCheck } from './src/getIPCheck.js'
 import { getUniqueCombinations } from './src/getUniqueCombinations.js'
 import log from './src/log.js'
 import { writeFile } from './src/writeFile.js'
+import { generateVoucher } from './src/generators.js'
 
 export default {
+    arrays: {
+        shuffleArray,
+    },
+    generators: {
+        generateVoucher,
+    },
     objects: {
         removeKeysByStringArray,
         filterKeysByValue,
@@ -25,9 +32,6 @@ export default {
     numbers: {
         getRandomIntegerInRange,
         getUniqueCombinations,
-    },
-    arrays: {
-        shuffleArray,
     },
     getDecimalPlaces,
     getIPCheck,
