@@ -5,7 +5,13 @@ export async function generateVoucher(batch = 3) {
         let voucher = ''
 
         function generate() {
-            return Math.random().toString(36).slice(8).toUpperCase()
+            let generation = ''
+
+            while (generation.length != 5) {
+                generation = Math.random().toString(36).slice(8).toUpperCase()
+            }
+
+            return generation
         }
 
         voucher = voucher.concat(generate())
